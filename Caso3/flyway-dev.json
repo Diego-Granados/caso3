@@ -1,0 +1,22 @@
+{
+  "version": "2.0",
+  "name": "Caso3",
+  "id": "52da5e10-28c6-4354-85db-f369ffa03a0c",
+  "databaseType": "SqlServer",
+  "development": {
+    "scriptsFolder": "./schema-model"
+  },
+  "deployment": {
+    "flywayConfFiles": [
+      "./flyway.conf"
+    ],
+    "targetDatabases": [
+      {
+        "connectionProvider": {
+          "type": "UsernamePassword",
+          "url": "jdbc:sqlserver://localhost:1433;databaseName=esencialverde;encrypt=false;integratedSecurity=true;trustServerCertificate=true"
+        }
+      }
+    ]
+  }
+}
